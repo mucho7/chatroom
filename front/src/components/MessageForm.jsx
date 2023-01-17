@@ -33,7 +33,7 @@ function MessageForm({ nickname }) {
 
   // 엔터를 누르면 실행
   const handleKeyDown = useCallback(event => {
-    console.log(event.key)
+    console.log(event)
     if (event.key === "Enter") {
       event.preventDefault()
       sendMessage(typingMessage)
